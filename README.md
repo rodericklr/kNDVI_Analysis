@@ -16,32 +16,32 @@ statistical summarization, and CSV export of results.
 
 
 ![img/img1.png](img/img1.png)  
-**Fig1.** The study area is 5km×5km grid  
+***Fig1. The study area is 5km×5km grid*** 
 
 
 **kNDVI Datasets:**   
 **2000:** Merged kNDVI image from four sub-regions (kNDVI_P1 to kNDVI_P4).  
 
 ![img/img2.png](img/img2.png)  
-**Fig2.** kNDVI spatial distribution in the study area in 2000  
+***Fig2. kNDVI spatial distribution in the study area in 2000***  
 
 **2023:** Merged kNDVI image from four sub-regions (kNDVI_p1 to kNDVI_P4).  
 
 ![img/img3.png](img/img3.png)  
-**Fig3.** kNDVI spatial distribution in the study area in 2023  
+***Fig3. kNDVI spatial distribution in the study area in 2023***  
 
 **Forest Cover Data:**
 2000 Forest Cover: Extracted from Hansen Global Forest Change (treecover2000).  
 
 ![img/img4.png](img/img4.png)  
-**Fig4.** Spatial distribution of forest with forest coverage greater than 25% in the study area in 2000  
+***Fig4. Spatial distribution of forest with forest coverage greater than 25% in the study area in 2000***  
 
 **Forest Loss (2000-2023):** Extracted from the loss band.  
 
 **2023 Forest Cover:** Derived by masking forest loss from 2000 forest cover.  
 
 ![img/img5.png](img/img5.png)  
-**Fig5.** Spatial distribution of forest with forest coverage greater than 25% in the study area in 2023  
+***Fig5. Spatial distribution of forest with forest coverage greater than 25% in the study area in 2023***  
 
 
 ---
