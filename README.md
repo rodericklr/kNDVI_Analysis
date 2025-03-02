@@ -57,7 +57,7 @@ Mask kNDVI values to retain only forested areas.
 Generate a final kNDVI image with two bands: kNDVI2000 and kNDVI2023.
 
 3. **Statistical Analysis:**
-Compute the mean kNDVI for unchanged forest areas within each 5km × 5km grid cell using reduceRegions().
+Compute the mean kNDVI for unchanged forest areas within each 5km × 5km grid cell using `reduceRegions()`.
 
 5. **Export Results:**
 Save mean kNDVI values per grid cell as a CSV file to Google Drive.
