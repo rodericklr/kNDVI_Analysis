@@ -19,7 +19,7 @@ statistical summarization, and CSV export of results.
 **Fig1.** The study area is 5km×5km grid  
 
 
-kNDVI Datasets: 
+**kNDVI Datasets:**   
 **2000:** Merged kNDVI image from four sub-regions (kNDVI_P1 to kNDVI_P4).  
 
 ![img/img2.png](img/img2.png)  
