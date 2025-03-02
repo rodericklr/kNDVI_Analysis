@@ -70,7 +70,7 @@ Save mean kNDVI values per grid cell as a CSV file to Google Drive.
 **kNDVI2023_mean:** Mean kNDVI value within each grid cell for 2023.  
 The CSV file is stored in the Mean_kndvi folder in Google Drive.
 
-**Tbale1.** Forest average kNDVI corresponding to the grid
+***Tbale1. Forest average kNDVI corresponding to the grid***
 | **Id**  | **kNDVI2000**    | **kNDVI2023**    |
 |-----|-------------|-------------|
 | 34  | 0.5058752   | 0.783572493 |
