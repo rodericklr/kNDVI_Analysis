@@ -1,66 +1,47 @@
 # kNDVI_Analysis
 kNDVI Analysis in Google Earth Engine
 
----
-
 ## **Overview**  
 This script calculates the mean kNDVI (kernel NDVI) values for unchanged forest areas 
 within a 5km × 5km grid, comparing the years 2000 and 2023. The analysis is conducted 
 in Google Earth Engine (GEE) and involves forest masking, 
 statistical summarization, and CSV export of results.
 
+---
+
 ## **Data Inputs**  
 
-**Region of Interest (ROI):** A predefined polygon specifying the study area.
+**Region of Interest (ROI):** A predefined polygon specifying the study area.  
 **Grid (Fishnet Feature Collection):** A 5km × 5km grid imported as `users/4321hsd/Fishnet`.
 
 
 ![img/img1.png](img/img1.png)  
-**Fig1.** The study area is 5km×5km grid
+**Fig1.** The study area is 5km×5km grid  
 
 
 kNDVI Datasets: 
-**2000:** Merged kNDVI image from four sub-regions (kNDVI_P1 to kNDVI_P4).
+**2000:** Merged kNDVI image from four sub-regions (kNDVI_P1 to kNDVI_P4).  
 
 ![img/img2.png](img/img2.png)  
-**Fig2.** kNDVI spatial distribution in the study area in 2000
+**Fig2.** kNDVI spatial distribution in the study area in 2000  
 
-**2023:** Merged kNDVI image from four sub-regions (kNDVI_p1 to kNDVI_P4).
+**2023:** Merged kNDVI image from four sub-regions (kNDVI_p1 to kNDVI_P4).  
 
 ![img/img3.png](img/img3.png)  
-**Fig3.** kNDVI spatial distribution in the study area in 2023
+**Fig3.** kNDVI spatial distribution in the study area in 2023  
 
 **Forest Cover Data:**
-2000 Forest Cover: Extracted from Hansen Global Forest Change (treecover2000).
+2000 Forest Cover: Extracted from Hansen Global Forest Change (treecover2000).  
 
 ![img/img4.png](img/img4.png)  
-**Fig4.** Spatial distribution of forest with forest coverage greater than 25% in the study area in 2000
+**Fig4.** Spatial distribution of forest with forest coverage greater than 25% in the study area in 2000  
 
-**Forest Loss (2000-2023):** Extracted from the loss band.
+**Forest Loss (2000-2023):** Extracted from the loss band.  
 
-**2023 Forest Cover:** Derived by masking forest loss from 2000 forest cover.
+**2023 Forest Cover:** Derived by masking forest loss from 2000 forest cover.  
 
 ![img/img5.png](img/img5.png)  
-**Fig5.** Spatial distribution of forest with forest coverage greater than 25% in the study area in 2023
-
-
-
-## **How to use**
-
-Modify `roi2 = subroi.filterMetadata('grid_id', 'equals', X);` to select a subregion (1-4).  
-Run the script to compute and visualize kNDVI for 2000 and 2023.  
-The results are exported as `toUint32()` to optimize storage.
-
-## **Notes** 
- Large study areas may exceed GEE's memory limits.  
- Ensure sufficient asset storage before exporting.
-
-## License
-Certain implementations within this repository are currently patent-pending.  
-Use of this code must comply with the patent clause of the **Apache 2.0 License**.
-
-------------------------------
-
+**Fig5.** Spatial distribution of forest with forest coverage greater than 25% in the study area in 2023  
 
 ## **Processing Steps**
 1.	**Import and Visualization:**
